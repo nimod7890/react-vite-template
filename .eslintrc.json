@@ -1,37 +1,35 @@
-module.exports = {
-  root: true,
-  env: { browser: true, es2020: true },
-  extends: [
+{
+  "root": true,
+  "env": { "browser": true, "es2020": true },
+  "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
-    "prettier",
+    "prettier"
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs"],
-  parser: "@typescript-eslint/parser",
-  plugins: [
+  "ignorePatterns": ["dist"],
+  "parser": "@typescript-eslint/parser",
+  "plugins": [
     "no-relative-import-paths",
     "react-refresh",
     "@typescript-eslint",
-    "prettier",
     "import",
     "react",
-    "react-hooks",
+    "react-hooks"
   ],
-  parserOptions: {
-    project: "./tsconfig.json",
+  "parserOptions": {
+    "project": "./tsconfig.json"
   },
-  rules: {
-    // <ForSpaceLab lint rules
+  "rules": {
     "no-implicit-coercion": "error",
     "no-warning-comments": [
       "warn",
       {
-        terms: ["TODO", "FIXME", "XXX", "BUG"],
-        location: "anywhere",
-      },
+        "terms": ["TODO", "FIXME", "XXX", "BUG"],
+        "location": "anywhere"
+      }
     ],
-    "indent": ["error", 2, { SwitchCase: 1 }],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "no-trailing-spaces": "error",
     "curly": "error",
     "brace-style": "error",
@@ -41,28 +39,28 @@ module.exports = {
     "no-whitespace-before-property": "error",
     "func-call-spacing": "error",
     "space-before-blocks": "error",
-    "keyword-spacing": ["error", { before: true, after: true }],
-    "comma-spacing": ["error", { before: false, after: true }],
+    "keyword-spacing": ["error", { "before": true, "after": true }],
+    "comma-spacing": ["error", { "before": false, "after": true }],
     "comma-style": ["error", "last"],
     "space-in-parens": ["error", "never"],
     "block-spacing": "error",
     "array-bracket-spacing": ["error", "never"],
     "object-curly-spacing": ["error", "always"],
-    "key-spacing": ["error", { mode: "strict" }],
-    "arrow-spacing": ["error", { before: true, after: true }],
+    "key-spacing": ["error", { "mode": "strict" }],
+    "arrow-spacing": ["error", { "before": true, "after": true }],
     "react/react-in-jsx-scope": "off",
     "@typescript-eslint/no-empty-function": "off",
     "react-refresh/only-export-components": "off",
     "@typescript-eslint/naming-convention": [
       "error",
       {
-        format: ["camelCase", "UPPER_CASE", "PascalCase"],
-        selector: "variable",
-        leadingUnderscore: "allow",
+        "format": ["camelCase", "UPPER_CASE", "PascalCase"],
+        "selector": "variable",
+        "leadingUnderscore": "allow"
       },
-      { format: ["camelCase", "PascalCase"], selector: "function" },
-      { format: ["PascalCase"], selector: "interface" },
-      { format: ["PascalCase"], selector: "typeAlias" },
-    ],
-  },
-};
+      { "format": ["camelCase", "PascalCase"], "selector": "function" },
+      { "format": ["PascalCase"], "selector": "interface" },
+      { "format": ["PascalCase"], "selector": "typeAlias" }
+    ]
+  }
+}

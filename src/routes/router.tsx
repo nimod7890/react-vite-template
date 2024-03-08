@@ -1,5 +1,5 @@
 import { RouteObject, createBrowserRouter } from "react-router-dom";
-import RoutePath from "src/routes/routePath";
+import RoutePath from "@routes/routePath";
 
 const routes: RouteObject[] = [
   {
