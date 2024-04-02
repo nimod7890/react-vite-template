@@ -30,6 +30,7 @@
       "@pages/*": ["src/pages/*"],
       "@routes/*": ["src/routes/*"],
       "@types/*": ["src/types/*"],
+      "@styles/*": ["src/types/*"],
       "@utils/*": ["src/utils/*"],
       "@/*": ["src/*"]
     }
