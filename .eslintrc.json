@@ -7,16 +7,9 @@
     "plugin:react-hooks/recommended",
     "prettier"
   ],
-  "ignorePatterns": ["dist"],
+  "ignorePatterns": ["dist", ".eslintrc.json", "vite.config.ts"],
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "no-relative-import-paths",
-    "react-refresh",
-    "@typescript-eslint",
-    "import",
-    "react",
-    "react-hooks"
-  ],
+  "plugins": ["no-relative-import-paths", "@typescript-eslint", "import", "react", "react-hooks"],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
