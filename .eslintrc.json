@@ -2,14 +2,23 @@
   "root": true,
   "env": { "browser": true, "es2020": true },
   "extends": [
+    "prettier",
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
-    "prettier"
+    "eslint-config-prettier"
   ],
   "ignorePatterns": ["dist", ".eslintrc.json", "vite.config.ts"],
   "parser": "@typescript-eslint/parser",
-  "plugins": ["no-relative-import-paths", "@typescript-eslint", "import", "react", "react-hooks"],
+  "plugins": [
+    "eslint-plugin-prettier",
+    "prettier",
+    "no-relative-import-paths",
+    "@typescript-eslint",
+    "import",
+    "react",
+    "react-hooks"
+  ],
   "parserOptions": {
     "project": "./tsconfig.json"
   },
