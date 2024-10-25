@@ -10,7 +10,7 @@ export default function ErrorPage({ message }: { message?: string }) {
 
   const navigate = useNavigate();
 
-  const errorMessage = useMemo(() => parsedErrorMsg(error.status), [error.status]);
+  const errorMessage = useMemo(() => parsedErrorMsg(error?.status), [error]);
 
   return (
     <ErrorContainer

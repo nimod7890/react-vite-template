@@ -12,7 +12,7 @@ export default function GlobalErrorBoundary({ children }: PropsWithChildren) {
 }
 
 function ErrorFallback({ error, resetErrorBoundary }: FallbackProps) {
-  const errorMessage = useMemo(() => parsedErrorMsg(error.status), [error.status]);
+  const errorMessage = useMemo(() => parsedErrorMsg(error?.status), [error]);
 
   return <ErrorContainer errorMessage={errorMessage} reset={resetErrorBoundary} />;
 }

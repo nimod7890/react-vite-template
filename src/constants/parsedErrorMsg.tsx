@@ -1,4 +1,4 @@
-export default (errorStatus: number) => {
+export default (errorStatus: number | null) => {
   switch (errorStatus) {
     case 400:
       return "잘못된 요청입니다. 입력된 정보를 확인해주세요.";
